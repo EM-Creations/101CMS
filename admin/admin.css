@@ -1,0 +1,15 @@
+/* 
+    Document   : admin.css
+    Created on : 03-Nov-2012, 00:31:01
+    Author     : Edward McKnight (EM-Creations.co.uk)
+    Description:
+        Admin area style sheet.
+*/
+
+/* Misc */
+span.editMetaTag, span.deleteMetaTag {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+

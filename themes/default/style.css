@@ -1,0 +1,280 @@
+/* 
+    Document   : style
+    Created on : 11-Oct-2012, 21:35:58
+    Author     : Edward McKnight (EM-Creations.co.uk)
+    Description:
+        101 Clan CMS Default Theme
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url('./images/background.png');
+    background-color: #000000; /* Black */
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+body a, a:visited {
+    color: white;
+}
+
+/* Container */
+#mainContainer {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Content Area */
+#mainContainer #contentArea {
+    margin: 0 auto;
+    width: 934px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+/* Header */
+#contentArea #header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 934px;
+}
+
+#contentArea #header h1 {
+    display: inline;
+}
+
+#contentArea #header img {
+    display: inline;
+}
+
+/* AJAX Login Box */
+#contentArea #ajaxLoginBox {
+    float: right;
+    background: url('./images/login2.png');
+    width: 232px;
+    height: 120px;
+    color: #FFFFFF;
+}
+
+/* AJAX Login Table */
+#ajaxLoginTable {
+    padding-top: 4px;
+}
+
+#ajaxLoginTable td {
+	color: #FFFFFF;
+	padding-top: 0;
+    padding-right: 5px;
+}
+
+#ajaxLoginTable .right {
+	text-align: right;
+}
+
+/* Header Social Buttons */
+#contentArea #headerSocialButtons {
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+
+#headerSocialButtons .socialButton {
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    min-width: 100px;
+}
+
+/* Main Menu Styles */
+#contentArea #mainMenu {
+    margin-top: 15px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    background: url('./images/menubar.png');
+    width: 929px; /* Width of the image minus the padding */
+    height: 51px;
+}
+
+#contentArea #mainMenu ul {
+    padding-left: 10px;
+    padding-top: 14px;
+}
+
+#contentArea #mainMenu li {
+    display: inline;
+    padding-right: 25px;
+    margin-right: 20px;
+    background: url('./images/menu_spacer.png') transparent right no-repeat;
+}
+
+#contentArea #mainMenu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Left Box (for widgets) */
+#contentArea #leftBox {
+    float: left;
+    width: 175px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#contentArea #leftBox .widget {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+}
+
+#contentArea #leftBox .widget .content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center; /*  Centre the widget content */
+}
+
+/* Main Content */
+#contentArea #mainContent {
+    float: left;
+    width: 729px;
+    background-color: #1B1B1B;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #FFFFFF;
+}
+
+#contentArea #mainContent #content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#contentArea span.title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+
+#contentArea span.pageUpdatedTime {
+    float: right;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+/* Footer */
+#contentArea #footer {
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 10px;
+    background-color: #3E3D3D;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*** Misc ***/
+#contentArea .bottomBoxBar {
+    float: left;
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    background-color: #3E3D3D;
+}
+
+/* Slightly increase the size of the facebook like button */
+.fb-like iframe {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    -o-transform: scale(1.2); 
+    -moz-transform: scale(1.2); 
+    transform-origin: top left;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+}
+
+/* Form Tables */
+#loginForm .right, #registerForm .right, #updateAccountForm .right {
+    text-align: right;
+}
+
+input.error {
+	color: #FFFFFF;
+	background-color: #FF4D4D;
+}
+
+td.error {
+	font-size: 10px;
+}
+
+/* Other Tables */
+#viewProfileTable .label {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Success, Error and Info messages */
+div.successmsg, div.errormsg, div.infomsg {
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-family: Helvetica;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+div.successmsg {
+	background-color: #33CC00;
+}
+
+div.errormsg {
+	background-color: #CC1100;
+}
+
+div.infomsg {
+	background-color: #48C9EF;
+}
+
+/* Rosters */
+.roster table {
+	border-collapse: collapse;
+}
+
+.roster table, .roster td {
+	border: 1px solid #FFFFFF;
+}
+
+.roster td {
+	padding: 2px 10px;
+}
+
+.roster td.title {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #3E3D3D;
+	padding: 5px 15px;
+}
