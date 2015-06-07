@@ -1,5 +1,5 @@
 <?php
-require(__DIR__ . "/../cms/dbConfig.php");
+require(__DIR__ . "/../cms/config.inc.php");
 
 print("<h3>Updating database..</h3><br />\n");
 

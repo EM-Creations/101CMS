@@ -14,7 +14,7 @@ date_default_timezone_set("Europe/London"); // Set the default time zone to Euro
 $_generateStart = microtime(true);
 
 // Include the files we need
-require(__DIR__ . "/dbConfig.php"); // Database configuration file
+require(__DIR__ . "/config.inc.php"); // Database configuration file
 
 require(__DIR__ . "/classes/Security.class.php"); // Security static methods
 
