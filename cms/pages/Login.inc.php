@@ -100,7 +100,7 @@ if ($_currUser->type() == "guest") { // If they're not logged in
 		if (Security::checkToken("logoutForm", $_POST['101Token'])) { // If the CSRF token is valid
 			$_currUser->logout();
 
-			User::redirect("./?p=Login", "success", "Successfully logged out"); // Redirect the user
+			User::redirect("./?p=Home", "success", "Successfully logged out"); // Redirect the user
 		}
 	}
 	?>
@@ -111,4 +111,3 @@ if ($_currUser->type() == "guest") { // If they're not logged in
 	<?php
 	// </editor-fold>
 }
-?>
